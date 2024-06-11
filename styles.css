@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo{
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('https://i0.wp.com/www.universdescomics.com/wp-content/uploads/2022/02/The-Batman-banner.jpg?ssl=1');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailler-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailler{
+    width: 50%;
+}
+#sinopse{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+.description{
+    color: #fff;
+    font-size: 19px;
+    font-family:  'kdam thmor pro', sans-serif;
+    width: 70%;
+}
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+.button:hover{
+    background-color: #fff;
+    color: #000;
+}
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cards-content{
+    width: 90%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.card{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}    
+.banner-1{
+    background-image: url(https://ovicio.com.br/wp-content/uploads/2022/01/20220121-ovicio-batman-robert-pattinson-dc-roteiro-555x555.jpg);
+    
+}    
+.banner-2{
+    background-image: url(https://rollingstone.uol.com.br/media/_versions/zoe_kravitz_em_the_batman_foto_divulgacao_widelg.jpg);
+
+}
+.banner-3{
+    background-image: url(https://static.hitek.fr/img/up_m/117888278/jeffreywrightwestworldscreenshot600x318.jpg);
+
+}
+.banner-1:hover{
+    background-image: url(https://noticiasdatv.uol.com.br/media/_versions/artigos_2021/batman-robert-pattinson-capuz-foto-divulgacao-warner-bros_fixed_large.jpg);
+    transform:rotateY(360deg); 
+    transition: 1s;
+}
+.banner-2:hover{
+    background-image: url(https://pbs.twimg.com/media/FMO83fmWYAMYttY?format=jpg&name=900x900);
+    transform:rotateY(360deg); 
+    transition: 1s;
+}
+.banner-3:hover{
+    background-image: url(https://static1.personality-database.com/profile_images/c29291cacffc4a999359ff11aabb8125.png);
+    transform:rotateY(360deg); 
+    transition: 1s;
+}
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span{
+    color: #fff;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+.footer-navigation{
+    display: none;
+
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.back{
+    width: 100% ;
+    height: 100%;
+    background-image: url(https://cdn.ome.lt/d1WxTqmMEO3bA8lIHgGF_fPjZj0=/1200x630/smart/extras/conteudos/the_batman.jpg);
+    background-position: 50% 50%;
+    background-size:cover; 
+    display: flex;
+    color: #fff;
+    font-family: 'kdam thmor pro', sans-serif;
+    
+    
+}
+.format{
+    width: 50%;
+    height: 50%;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5px;
+             
+}
+
+
+form{
+    width: 450px;
+    
+}
+label{
+    width: 100%;
+    background-color: transparent;
+    display: block;
+    margin-top: 10px;
+    
+    
+} 
+input{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    border-style: inset;
+    background-image: url(https://st5.depositphotos.com/72897924/62234/v/450/depositphotos_622340974-stock-illustration-luxury-black-metal-gradient-background.jpg);
+    background-position: 50% 50%;
+    
+    
+    
+} 
+textarea{
+    width: 400px;
+    height: 200px;
+    border-style:inset;
+    border-radius: 5px;
+    color: #fff;
+    background-image: url(https://st5.depositphotos.com/72897924/62234/v/450/depositphotos_622340974-stock-illustration-luxury-black-metal-gradient-background.jpg);
+    background-position: 50% 50%;
+    
+    
+     
+
+}
+#title{
+    width: 450px;
+    height: auto;
+    background-color: transparent;
+    font-size: 50px;
+    
+}  
+#complement{
+    width: 450px;
+    height: auto;
+    background-color: transparent;
+   
+}
+    
+#text-complement{
+    width: 450px;
+    height: auto;
+    background-color: transparent;
+    
+}
+
+.photos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.photos-card{
+    width: 90%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.photo{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    
+}
+.photo:hover{
+    transform: scale(1.09);
+} 
+.img-1{
+    background-image: url(https://assets1.ignimgs.com/thumbs/userUploaded/2021/10/16/riddlerthumb-1634427413907.jpeg?width=1280);
+    
+}
+.img-2{
+    background-image: url(https://i.insider.com/5f856bcdc255d800190b980a?width=700);
+    
+}
+.img-3{
+    background-image: url(https://www.tutto.tv/wp-content/uploads/2022/02/the-batman.jpg);
+    
+}
+.img-4{
+    background-image: url(https://eulorenaribeiro.files.wordpress.com/2022/03/the-batman-2.jpg?w=1024);
+    
+}
+.img-5{
+    background-image: url(https://images.immediate.co.uk/production/volatile/sites/3/2020/11/jeffrey_wright_commissioner_gordon_batman_dc-87bf1a7.jpg?quality=90&resize=620,414);
+    
+}
+.img-6{
+    background-image: url(https://img.olhardigital.com.br/wp-content/uploads/2022/02/Charada-em-The-Batman.jpg);
+    
+}
+.img-7{
+    background-image: url(https://www.usatoday.com/gcdn/presto/2022/03/05/USAT/883c7e12-aaba-460c-9857-aece1f30b179-TBM-33717JO.jpg);
+    
+}
+.img-8{
+    background-image: url(https://p2.trrsf.com/image/fget/cf/1200/1600/middle/images.terra.com/2023/04/12/1797866254-the-batman-penguin-pinguim.jpg);
+    
+}
+.img-9{
+    background-image: url(https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2023/10/15/803547740-ff483d1c39d0a18fc7bc857b36f50983.jpg);
+    
+}
+
+.cards-coments{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;        
+}
+
+.cards-persons{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    align-items: center;
+    font-family: 'kdam thmor pro', sans-serif;
+    color: #fff;
+    
+}
+.avatar{
+   width: 400px;
+   height: 400px;
+   background-size: cover;
+   background-position: 50% 50%;
+   border-radius: 50%;
+   display: flex;
+   flex-direction: column;
+   padding: 0 0 20px 10px;
+        
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 50px;
+   
+
+}
+.person-name{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.person-1{
+    background-image: url(https://assetsio.reedpopcdn.com/henry-cavill-superman.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp);
+
+}
+
+.person-2{
+    background-image: url(https://veja.abril.com.br/wp-content/uploads/2017/06/divulgacao-mulher-maravilha.jpg?quality=90&strip=info&w=720&h=440&crop=1);
+
+}
+
+.person-3{
+    background-image: url(https://res.cloudinary.com/nerd-club/image/upload/v1702583459/Aquaman-2.jpg);
+
+}
+
+.person-4{
+    background-image: url(https://veja.abril.com.br/wp-content/uploads/2023/04/the-flash-ezra-miller.jpg?quality=90&strip=info&w=1024&resize=1200,800);
+
+}
+
+.person-5{
+    background-image: url(https://i0.wp.com/www.thewrap.com/wp-content/uploads/2021/01/ray-fisher-cyborg-the-flash.png?fit=618%2C412&ssl=1);
+
+}
+
+.person-6{
+    background-image: url(https://www.looper.com/img/gallery/michael-caine-reveals-how-christopher-nolan-convinced-him-to-play-alfred/l-intro-1629895849.jpg);
+
+}
+ h1{
+    color: #fff;
+    font-family: 'kdam thmor pro', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+ }
+
+ @media(max-width:768px){
+    
+    .footer-navigation{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    #banner{
+        background-position: 40%;
+    }
+    #trailler-container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .trailler{
+        width: 100%;
+    }
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .description{
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+        margin-top: 30px;
+
+    }
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+    .photos-card{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+
+
+    .cards-coments{
+        width: 100%;
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+        justify-items: center;
+        align-items: center;
+    }
+    .cards-persons{
+        display:flex;
+        flex-direction: column;
+                  
+       
+    }
+    .avatar{
+       border-radius: 5px;
+       width: 100%;
+       height: 450px;
+        
+    }
+    .person-name{
+        text-align: center;
+    }
+    .comments{
+        margin-left: 0px;
+    }
+    .back{
+        width: 100% ;
+        height: 100%;
+        background-position: 50% 50%;
+        background-size:cover; 
+        
+    }
+    .format{
+        width: 100%;
+        height: 100%;
+        background-color:transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 5px;
+
+
+ }
